@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+import { Button } from "@/components/ui/button";
 const page = () => {
   return (
     <>
@@ -12,9 +12,9 @@ const page = () => {
             <p className="text-lg">
               Practice on Real Interview Question and get instant Feedback
             </p>
-            <button asChild className="btn-primary max-sm:w-full">
+            <Button asChild className="btn-primary max-sm:w-full">
               <Link href="/interview">Start an interview</Link>
-            </button>
+            </Button>
         </div>
         <Image src="/robot.png" alt="robo-dude" width={400} height={400} className="max-sm:hidden" />
       </section>
